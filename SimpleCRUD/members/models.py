@@ -10,3 +10,5 @@ class Member(models.Model):
     password = models.CharField(max_length=255, null=True)
     joineddate = models.DateField(null=True)
     
+    def __str__(self):
+        return f"{self.firstname} {self.lastname}"
